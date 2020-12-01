@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class InputDay1 {
+public class Day1Input {
 
     public static String input = "1974\n" +
             "1902\n" +
