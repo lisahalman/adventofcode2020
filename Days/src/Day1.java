@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Day1 {
 
     public static void main(String[] args) {
-        InputDay1 input = new InputDay1();
+        Day1Input input = new Day1Input();
         String[] split = input.input.split("\\s+".trim());
         System.out.println(Arrays.toString(split));
         int length = split.length;
