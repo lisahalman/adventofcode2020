@@ -21,7 +21,7 @@ public class Day5 {
         test.add("BFFFBBFRRR");
         test.add("FFFBBBFRRR");
         test.add("BBFFBBFRLL");
-        int[][] airplane = new int[128][8];
+        char[][] airplane = new char[128][8];
         for (String line : lines) {
             for (char letter : line.toCharArray()) {
                 if (letter == 'F') {
@@ -62,7 +62,7 @@ public class Day5 {
 
         int rowID = 0;
         //System.out.println(Arrays.deepToString(airplane));
-        for (int[] row : airplane) {
+        for (char[] row : airplane) {
             System.out.print(rowID);
             rowID++;
             System.out.println(Arrays.toString(row));
