@@ -9,8 +9,8 @@ public class Day2 {
         List<String> lines = Files.readAllLines(new File("Day2Input.txt").toPath());
         int count = 0;
         int newCount = 0;
-        for (int i = 0; i < lines.size(); i++) {
-            String[] splittedOnSpace = lines.get(i).split(" ");
+        for (String line : lines) {
+            String[] splittedOnSpace = line.split(" ");
 
             //numbers
             String numbers = splittedOnSpace[0];
