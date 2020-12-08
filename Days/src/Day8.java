@@ -1,6 +1,7 @@
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.util.Arrays;
 import java.util.List;
 
 public class Day8 {
@@ -18,6 +19,19 @@ public class Day8 {
         }
         int[] countIfDouble = new int[1000];
         System.out.println(calculateDouble(listPerLine, numbers, countIfDouble, 0));
+
+        //part 2
+
+        for (int i = 0; i < 608 ; i++) {
+            if (listPerLine[i][0].equals("nop")) {
+                listPerLine[i][0] = "jmp";
+                System.out.println(calculateDouble(listPerLine, numbers, countIfDouble, 0));
+            }
+        }
+
+        //System.out.println(Arrays.deepToString(listPerLine));
+
+
     }
 
     public static int calculateDouble(String[][] listPerLine, int[][] accNumber, int[] countForLine, int lineNumberToCheck) {
